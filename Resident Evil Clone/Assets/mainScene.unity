@@ -378,7 +378,7 @@ PrefabInstance:
     - target: {fileID: 2918460862966568265, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 79.2
+      value: 73.49
       objectReference: {fileID: 0}
     - target: {fileID: 2918460862966568265, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
         type: 3}
@@ -415,6 +415,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3690064645600687074, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
+        type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690064645600687074, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
+        type: 3}
+      propertyPath: field of view
+      value: 133
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690064645600687074, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
+        type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690064645600687074, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
+        type: 3}
+      propertyPath: m_FocalLength
+      value: 13.9095955
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690064645600687074, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5282822583449958775, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
         type: 3}
       propertyPath: fpsCamera
@@ -428,7 +453,7 @@ PrefabInstance:
     - target: {fileID: 5282822583449958775, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
         type: 3}
       propertyPath: moveSpeed
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5282822583449958775, guid: 9ebe7763e52eb6b4bb789c94636dfd48,
         type: 3}
