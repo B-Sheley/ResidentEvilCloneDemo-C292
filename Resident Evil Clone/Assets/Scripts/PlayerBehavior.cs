@@ -12,6 +12,7 @@ public class PlayerBehavior : MonoBehaviour
     private float xRotation;
     [SerializeField] Transform fpsCamera;
     private Rigidbody rb;
+    [SerializeField] private Transform firepoint;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,11 @@ public class PlayerBehavior : MonoBehaviour
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            shoot();
         }
     }
 
@@ -72,6 +78,16 @@ public class PlayerBehavior : MonoBehaviour
         if(collision.gameObject.tag == "Ground")
         {
             isGrounded = false;
+        }
+    }
+
+    private void shoot() {
+        RaycastHit hit;
+        if(Physics.Raycast(firepoint.position, firepoint.forward, out hit, 100)) {
+            Debug.DrawRay(firepoint.position, firepoint.forward * hit.distance, Color.red, 2f);
+            if (hit.transform.CompareTag("Zombie")){
+                hit.transform.GetComponent<Enemy>().TakeDamage(1);
+            }
         }
     }
 }
